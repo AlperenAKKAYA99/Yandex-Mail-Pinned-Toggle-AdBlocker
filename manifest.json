@@ -1,0 +1,66 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/128.png",
+         "16": "icons/16.png",
+         "32": "icons/32.png",
+         "48": "icons/48.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "Yandex Mail Modern Pinned Toggle & AdBlocker"
+   },
+   "permissions": [
+      "storage"
+   ],
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "scripts/adblock.js",
+            "scripts/optimizer.js"
+         ],
+         "matches": [
+            "https://mail.yandex.ru/*",
+            "https://mail.yandex.com/*",
+            "https://mail.yandex.by/*",
+            "https://mail.yandex.kz/*",
+            "https://mail.yandex.ua/*",
+            "https://mail.yandex.com.tr/*",
+            "https://mail.yandex.uz/*"
+         ],
+         "run_at": "document_start"
+      },
+      {
+         "js": [
+            "scripts/script.js"
+         ],
+         "matches": [
+            "https://mail.yandex.ru/*",
+            "https://mail.yandex.com/*",
+            "https://mail.yandex.by/*",
+            "https://mail.yandex.kz/*",
+            "https://mail.yandex.ua/*",
+            "https://mail.yandex.com.tr/*",
+            "https://mail.yandex.uz/*"
+         ],
+         "run_at": "document_idle"
+      }
+   ],
+   "description": "Yandex Mail sabitlenmiş e-postalara gösterme/gizleme düğmesi ekler, reklamları engeller ve kontrol panelinden reklam engelleme ayarlarını yönetmenizi sağlar.",
+   "host_permissions": [
+      "https://ads.alperenakkaya.dev/*"
+   ],
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAracGNO2z2/Ctgv1+FGbpog4EUI329wvad05kDPbqhmlV7k/cunv0tansaOONaP55v+91jQy0vs0wjZbgC8u8ocvWLDAM/ALZkahDeH3R+HniVmN9hdA37gWzuZk/CCloWx55TBp+wIWyK7CtMBIJSTC0W3Ar+CSNC61Eoq9rd0Hwg6t0t0d6N0xr0AsG/2kDc+gCao8Bs5nW9XOoF17LJH386qxBSnNZh4785uJ7TjbxAfVPLhVtZJ2FU6x5360b9xpNr+0zFuWVCFwwiB+/xUkxXugNcO0vUbY0/iAp5VerBNgj1562pkirgtP/WnVASfL83IUBj+SEJMegvNo/4QIDAQAB",
+   "manifest_version": 3,
+   "name": "Yandex Mail Modern Pinned Toggle & AdBlocker",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.5"
+}

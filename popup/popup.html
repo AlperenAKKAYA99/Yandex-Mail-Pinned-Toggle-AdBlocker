@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yandex Mail Yardımcısı</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="popup-container">
+    <header>
+      <div class="logo-area">
+        <svg class="star-icon" viewBox="0 0 24 24">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+          </polygon>
+        </svg>
+        <h1>Yandex Mail Pinned Toggle & AdBlocker</h1>
+      </div>
+      <span class="version">v1.0.5</span>
+    </header>
+
+    <main>
+      <!-- AdBlock Control Card -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <svg class="card-icon shield-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <div class="title-desc">
+              <h3>Reklam Engelleme</h3>
+              <p class="status-desc"><span id="status-label" class="status-active">Aktif</span> • Reklamları temizler
+              </p>
+            </div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="adblock-toggle" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Pinned Toggle Control Card -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <svg class="card-icon pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="17" x2="12" y2="22"></line>
+              <path
+                d="M5 17h14v-1.76a2 2 0 0 0-.44-1.24l-2.78-3.47A2 2 0 0 1 15 9.3V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4.3a2 2 0 0 1-.78 1.23l-2.78 3.47A2 2 0 0 0 5 15.24V17z">
+              </path>
+            </svg>
+            <div class="title-desc">
+              <h3>Sabitlenmiş E-postalar</h3>
+              <p class="status-desc"><span id="pinned-status-label" class="status-active">Aktif</span> • Daralt/Göster
+                butonu</p>
+            </div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="pinned-toggle" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Speed Booster Control Card -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <svg class="card-icon zap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <div class="title-desc">
+              <h3>Hızlandırıcı & Optimizasyon</h3>
+              <p class="status-desc"><span id="speed-status-label" class="status-active">Aktif</span> • Animasyon & sayfa optimizasyonu</p>
+            </div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="speed-toggle" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Reload Prompt Card -->
+      <div class="card reload-card hidden" id="reload-prompt">
+        <div class="reload-content">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Değişikliklerin uygulanması için sekmeyi yenileyin.</span>
+        </div>
+        <button id="reload-btn" class="btn btn-secondary">Sekmeyi Yenile</button>
+      </div>
+
+      <!-- Donation Card -->
+      <div class="card donate-card" id="donate-btn">
+        <div class="donate-content">
+          <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          <div class="donate-text">
+            <h4>Bağış Yap & Destek Ol</h4>
+            <p>Geliştiriciyi desteklemek için tıklayın</p>
+          </div>
+        </div>
+        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </div>
+    </main>
+
+    <footer>
+      <span>Modern Pinned Toggle & AdBlocker Suite</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
