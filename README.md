@@ -26,11 +26,6 @@ Yandex Mail deneyiminizi geliştirmek için tasarlanan hafif ve güvenli bir Goo
 - **One-Click Bağış:** Eklentiyi seviyor musunuz? Geliştiriciyi desteklemek için icon'a tıklamanız yeterli.
 
 ## �️ Ekran Görüntüleri
-
-<p align="center">
-  <img width="800" height="500" alt="ss1" src="https://raw.githubusercontent.com/AlperenAKKAYA99/Yandex-Mail-Pinned-Toggle-AdBlocker/refs/heads/main/ss/ss1.png" />
-</p>
-
 <p align="center">
   <img width="800" height="500" alt="ss2" src="https://raw.githubusercontent.com/AlperenAKKAYA99/Yandex-Mail-Pinned-Toggle-AdBlocker/refs/heads/main/ss/ss2.png" />
 </p>
