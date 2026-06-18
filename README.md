@@ -6,7 +6,7 @@ Yandex Mail Pinned Toggle & AdBlocker artık Chrome Web Store'da!
 ## 🔒 Gizlilik Politikası
 Kullanıcı verilerinin nasıl işlendiği hakkında detaylı bilgi için Gizlilik Politikamızı inceleyebilirsiniz:
 
-👉 **[Privacy Policy](https://alperenakkaya.dev/privacy.php?app=Yandex_Mail_Helper)**
+👉 **[Privacy Policy](https://alperenakkaya.dev/privacy.php?app=yandex_mail)**
 ## 📄 Lisans
 
 Bu proje [MIT Lisansı](LICENSE) altında yayınlanmıştır. Ayrıntılar için LICENSE dosyasını inceleyebilirsiniz.
