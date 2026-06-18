@@ -1,7 +1,7 @@
 ## 🚀 Hemen Deneyin
 Yandex Mail Pinned Toggle & AdBlocker artık Chrome Web Store'da!
 
-👉 **[Chrome Web Store'dan Yükle](CHROME_STORE_URL)**
+👉 **[Chrome Web Store'dan Yükle](https://chromewebstore.google.com/detail/yandex-mail-modern-pinned/nbgbgdbpbnljkkpejndmapglmpecegmf)**
 
 ## 🔒 Gizlilik Politikası
 Kullanıcı verilerinin nasıl işlendiği hakkında detaylı bilgi için Gizlilik Politikamızı inceleyebilirsiniz:
